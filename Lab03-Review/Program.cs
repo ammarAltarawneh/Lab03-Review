@@ -10,47 +10,47 @@ namespace Lab03_Review
             try
             {
                 // Challenge 1
-                //Console.WriteLine("Please enter three numbers separated by spaces:");
-                //string inputNum = Console.ReadLine();
-                //int product = Product3Num(inputNum);
-                //Console.WriteLine($"The product of these 3 numbers is: {product}");
+                Console.WriteLine("Please enter three numbers separated by spaces:");
+                string inputNum = Console.ReadLine();
+                int product = Product3Num(inputNum);
+                Console.WriteLine($"The product of these 3 numbers is: {product}");
 
                 // Challenge 2
-                //CalculateAverage();
+                CalculateAverage();
 
                 // Challenge 3
-                //PrintPattern();
+                PrintPattern();
 
                 // Challenge 4
-                //Console.Write("Please enter array elements you want to find most appears element: ");
-                //string? arr = Console.ReadLine()!;
-                //string[] arrElements = arr.Split(' ');
+                Console.Write("Please enter array elements you want to find most appears element: ");
+                string? arr = Console.ReadLine()!;
+                string[] arrElements = arr.Split(' ');
 
-                //int[] ints = new int[arrElements.Length];
+                int[] ints = new int[arrElements.Length];
 
-                //for (int i = 0; i < arrElements.Length; i++)
-                //{
-                  //  int.TryParse(arrElements[i], out ints[i]);
+                for (int i = 0; i < arrElements.Length; i++)
+                {
+                  int.TryParse(arrElements[i], out ints[i]);
 
-                //}
-                //int MostAppearsNumber = MostAppearsNumberInArray(ints);
-                //Console.WriteLine($"Most Appears Number In This Array is {MostAppearsNumber}");
+                }
+                int MostAppearsNumber = MostAppearsNumberInArray(ints);
+                Console.WriteLine($"Most Appears Number In This Array is {MostAppearsNumber}");
 
                 // Challenge 5
-                //Console.Write("Please enter array elements you want to find max value element: ");
-                //string? arr2 = Console.ReadLine()!;
-                //if (arr2.Length < 1) throw new Exception("The array cannot be null!");
-                //string[] arrElements2 = arr2.Split(' ');
+                Console.Write("Please enter array elements you want to find max value element: ");
+                string? arr2 = Console.ReadLine()!;
+                if (arr2.Length < 1) throw new Exception("The array cannot be null!");
+                string[] arrElements2 = arr2.Split(' ');
 
-                //int[] ints2 = new int[arrElements2.Length];
+                int[] ints2 = new int[arrElements2.Length];
 
-                //for (int i = 0; i < arrElements2.Length; i++)
-                //{
-                  //  int.TryParse(arrElements2[i], out ints2[i]);
+                for (int i = 0; i < arrElements2.Length; i++)
+                {
+                  int.TryParse(arrElements2[i], out ints2[i]);
 
-                //}
-              //  int maxValue = MaxValueInArray(ints2);
-                //Console.WriteLine(maxValue);
+                }
+                int maxValue = MaxValueInArray(ints2);
+                Console.WriteLine(maxValue);
 
                 // Challenge 6
                 string path = "../../../TextFile1.txt";
@@ -65,7 +65,7 @@ namespace Lab03_Review
                 Console.WriteLine("Enter the word to remove:");
                 string wordToRemove = Console.ReadLine();
                 RemoveWordFromFile(path, wordToRemove);
-                Console.WriteLine("Word removed successfully.");
+                
 
             }
             catch (Exception ex)
